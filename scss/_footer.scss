@@ -1,0 +1,70 @@
+footer {
+    height: 92px;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    .trademark {
+        float: left;
+        height: 92px;
+        
+        width: 80%;
+        
+        ul {
+            display: inline;
+            list-style: none;
+            li {
+                color: #bbbbbb;
+                float: left;
+                font-size: 8px;
+                letter-spacing: 2px;
+                margin: 30px 20px 0 0;
+                text-transform: uppercase;
+                a {
+                   color: #bbbbbb;
+                    text-decoration: none;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+            
+        }
+    }
+    .newsletter {
+        float: right;
+        height: 92px;
+        width: 20%;
+        h6 {
+                text-transform: uppercase;
+                font-size: $size-h6;
+                font-weight: 900;
+                letter-spacing: 4px;
+                margin: 10px 0 10px 0;
+            }
+        #gofld {
+            border: 2px solid #d2d2d2;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            width: 185px;
+            height: 30px;
+            font-family: $ubuntu;
+            font-style: italic;
+            font-size:$size-font2;
+        }
+        #gobtn {
+            background-color: black;
+            border: 1px solid black;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color: white;
+            font-family: $ubuntu;
+            height: 32px;
+            width: 34px;
+            
+            &:hover{
+                background-color: white;
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+}

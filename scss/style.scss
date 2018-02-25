@@ -1,0 +1,25 @@
+@charset 'utf-8';
+@import 'typography';
+@import 'colors';
+@import 'header';
+@import 'content';
+@import 'footer';
+@import 'responsive';
+
+
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $lato;
+    .container {
+        max-width: 1315px;
+        margin: 0 auto;
+    }
+  
+}

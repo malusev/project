@@ -1,0 +1,296 @@
+    @media only screen and (max-width: 768px) {
+        .container {
+            width: 90%;
+        }
+        header {
+            .logo {
+                height: 35px;
+                width: 200px;
+            }
+            .navbar {
+                max-width: 90%;
+                ul {
+                    .underline {
+                        margin: 30px 10px 20px 10px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                img {
+                    display: none;
+                }
+            }
+        }
+        .banner {
+            height: 380px;
+            .headline {
+                width: 100%;
+                height: 380px;
+                h1 {
+                    font-size: 60px;
+                    padding-top: 60px;
+                }
+                h2 {
+                    font-size: 17px;
+                }
+                p {
+                    font-size: 8px;
+                }
+            }
+        }
+        .products {
+            height: 460px;
+            padding-bottom: 40px;
+            ul {
+                height: 380px;
+                width: 100%;
+                li {
+                    width: 30%;
+                    height: 380px;
+                    img {
+                        width: 100%;
+                        height: 310px;
+                    }
+                }
+            }
+        }
+        .text {
+            height: 374px;
+            h4 {
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+            p {
+                float: left;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            ul {
+                font-size: 14px;
+                line-height: 24px;
+                margin: 18px 80px;
+            }
+        }
+        .slider {
+            height: 320px;
+            ul {
+                .wrapper {
+                    height: 197px;
+                    width: 80%;
+                }
+                .next {
+                    height: 197px;
+                    line-height: 197px;
+                    img {
+                        height: 23px;
+                        width: 23px;
+                    }
+                }
+                .prev {
+                    height: 197px;
+                    line-height: 197px;
+                    img {
+                        height: 23px;
+                        width: 23px;
+                    }
+                }
+            }
+        }
+        .form {
+            padding-bottom: 80px;
+            ul {
+                .login {
+                    width: 54%;
+                    form {
+                        .inputfld {
+                            width: 255px;
+                        }
+                    }
+                }
+                .benefits {
+                    height: 392px;
+                    width: 44%;
+                    .benefitsfld {
+                        height: 442px;
+                        p {
+                            line-height: 24px;
+                            &:last-child {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            height: 150px;
+            width: 100%;
+            border-top: 1px solid #e5e5e5;
+            text-align: center;
+            .trademark {
+                height: auto;
+                width: 100%;
+            }
+            .newsletter {
+                padding: 20px;
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 640px) {
+        header {
+            border-top: none;
+            height: 70px;
+            .top-nav {
+                display: none;
+            }
+            .logo {
+                background-image: url('../img/logo1.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 30px auto 0 auto;
+                
+                height: 46px;
+                width: 401px;
+            }
+            
+            /*burger menu*/
+            .openbtn {
+                top: 32px;
+                left: 45px;
+                display: block;
+                width: 33px;
+                
+                position: absolute;
+            }
+            .overlay {
+                 display: none;
+                 max-width: 100%;
+                display: block;
+                height: 3000px;
+                width: 0;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: white;
+                overflow-x: hidden;
+                transition: 0.5s;
+                .closebtn {
+                    color: black;
+                    display: block;
+                    position: absolute;
+                    top: 20px;
+                    left: 45px;
+                    font-size: 50px;
+                    text-decoration: none;
+                }
+                .overlay-content {
+                    position: relative;
+                    margin: 20px auto 0 auto;
+                    width: 60%;
+                    
+                    li {
+                        display: block;
+                        width: 100%;
+                        float: none;
+                        margin: 0 auto;
+                       
+                        a {
+                            text-align: left;
+                            width: 100%;
+                            padding: 8px;
+                            text-decoration: none;
+                            font-size: 29px;
+                            color: black;
+                            border-bottom: 1px solid #e5e5e5;
+                             margin: 0 auto;
+                            transition: 0.3s;
+                            
+                        }
+                     
+                        
+                    }
+                }
+            }
+            
+            /*burger*/
+        }
+        .banner {
+            height: 340px;
+            .headline {
+                width: 100%;
+                height: 340px;
+                h1 {
+                    font-size: 40px;
+                    padding-top: 100px;
+                    letter-spacing: 10px;
+                }
+                h2 {
+                    font-size: 24px;
+                    padding-top: 20px;
+                }
+                p {
+                    font-size: 18px;
+                    padding-top: 10px;
+                }
+            }
+        }
+        .products {
+            ul {
+                height: 252px;
+                width: 100%;
+                li {
+                    width: 30%;
+                    height: 252px;
+                    img {
+                        width: 100%;
+                        height: 252px;
+                    }
+                }
+            }
+        }
+        .text {
+            height: 510px;
+            h4 {
+                font-size: 22px;
+            }
+            p {
+                float: left;
+                font-size: 16px;
+            }
+            ul {
+                font-size: 14px;
+            }
+        }
+        .slider {
+            height: 382px;
+        }
+        .form {
+            width: 90%;
+            height: 742px;
+            ul {
+                display: block;
+                width: 90%;
+                li {
+                    float: none;
+                    width: 100%;
+                }
+                .login {
+                    height: 452px;
+                    width: 100%;
+                }
+                .benefits {
+                    height: 272px;
+                    width: 100%;
+                    float: none;
+                }
+            }
+        }
+    }

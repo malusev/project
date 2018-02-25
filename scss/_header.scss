@@ -1,0 +1,181 @@
+header {
+    border-top: 5px solid $header-border;
+    box-sizing: border-box;
+    height: 148px;
+    padding-bottom: 12px;
+    width: 100%;
+    .top-nav {
+        float: right;
+        list-style: none;
+        li {
+            display: inline;
+            float: left;
+            margin-right: 20px;
+            margin-top: 25px;
+            a {
+                color: $link;
+                font-size: $size-font;
+                letter-spacing: 2px;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover {
+                    color: $link-hover;
+                }
+            }
+        }
+    }
+    .logo {
+        background-image: url('../img/logo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 40px auto 0 auto;
+        height: 35px;
+        width: 305px;
+    }
+
+    span {display: none;
+        font-size:30px;
+        cursor:pointer;
+    }
+    .navbar {
+        margin: 0 auto;
+        max-width: 880px;
+        overflow: hidden;
+        .closebtn {
+           display: none;
+        }
+        ul {
+            list-style: none;
+            li {
+                display: inline;
+                float: left;
+            }
+            .underline {
+                color: $underline;
+                float: left;
+                font-size: 11px;
+                font-weight: bold;
+                letter-spacing: 4px;
+                margin: 20px;
+                padding-bottom: 23px;
+                position: relative;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $underline;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                }
+                &:hover:before {
+                    visibility: visible;
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                }
+            }
+            .dropdown {
+                float: left;
+                overflow: hidden;
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: $drop-content;
+                    margin-top: 58px;
+                    left: 0;
+                    height: 474px;
+                    width: 100%;
+                    .promo {
+                        margin: 0 auto;
+                        height: 100%;
+                        width: 1100px;
+                        a {
+                            float: left;
+                            color: $link;
+                            text-transform: uppercase;
+                            text-align: center;
+                            margin: 20px;
+                            padding-bottom: 23px;
+                            letter-spacing: 4px;
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: $size-font1;
+                            &:hover {
+                                color: $link-hover;
+                            }
+                        }
+                        .submenu-list {
+                            li {
+                                display: block;
+                                float: none;
+                            }
+                            position: relative;
+                            .dropdown2 {
+                                overflow: hidden;
+                                width: 140px;
+                                .dropdown-content2 {
+                                    display: none;
+                                    position: absolute;
+                                    background-color: $drop-content;
+                                    left: 132px;
+                                    height: 474px;
+                                    width: 700px;
+                                    .promo2 {
+                                        padding-left: 60px;
+                                        margin: 0 auto;
+                                        height: 100%;
+                                        width: 100%;
+                                        img {
+                                            top: 20px;
+                                            position: absolute;
+                                        }
+                                        li {
+                                            display: inline;
+                                            float: left;
+                                            width: 26%;
+                                            margin-top: 20px;
+                                            a {
+                                                margin: 0;
+                                                padding: 0;
+                                            }
+                                            .submenu-vertical-list {
+                                                li {
+                                                    width: 100%;
+                                                    margin: 0;
+                                                    padding-top: 10px;
+                                                    a {
+                                                        letter-spacing: normal;
+                                                        text-transform: capitalize;
+                                                        font-weight: 400;
+                                                        font-size: $size-font2;
+                                                        &:hover {
+                                                            color: $submenu-link-hover;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .dropdown2:hover .dropdown-content2 {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        }
+    }
+}
